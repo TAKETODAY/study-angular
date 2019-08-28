@@ -1,3 +1,3 @@
-# angular-og5kau
+# Study Angular
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-og5kau)
+[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/study-angular)
