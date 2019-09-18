@@ -6,3 +6,20 @@
   <span>{{ item.name }}</span>
   <span>{{ item.price | currency }}</span>
 </div>
+
+<form [formGroup]="checkoutForm"
+      (ngSubmit)="onSubmit(checkoutForm.value)">
+
+
+  <div>
+    <label>姓名</label>
+    <input type="text" formControlName="name">
+  </div>
+ 
+  <div>
+    <label>地址</label>
+    <input type="text" formControlName="address">
+  </div>
+  <button class="button" type="submit">支付</button>
+
+</form>
