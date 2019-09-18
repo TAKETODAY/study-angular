@@ -1,9 +1,13 @@
 <h2>商品列表</h2>
 
-<div *ngFor="let product of prods">
+<div *ngFor="let product of prods; index as id">
 
    <h3>
-       <a [title]="product.name + ' details'">{{ product.name }}</a>
+       <a [title]="product.name + ' details'" 
+          [routerLink]="['/products', id]">
+
+        {{ product.name }}
+       </a>
   </h3>
   
   <p *ngIf="product.description">
